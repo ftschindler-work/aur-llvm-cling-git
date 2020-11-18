@@ -1,0 +1,45 @@
+pkgbase = llvm-cling-git
+	pkgdesc = Interactive C++ interpreter with custom clang and llvm
+	pkgver = 0.7.r20.g3d789b13
+	pkgrel = 1
+	url = https://root.cern.ch/cling
+	arch = x86_64
+	license = custom:Cling Release License
+	makedepends = cmake
+	makedepends = git
+	makedepends = jupyter
+	makedepends = libedit
+	makedepends = libffi
+	makedepends = libffi
+	makedepends = libxml2
+	makedepends = ncurses
+	makedepends = ninja
+	makedepends = ocaml=4.11.1
+	makedepends = ocaml-ctypes
+	makedepends = ocaml-findlib
+	makedepends = python
+	makedepends = python-recommonmark
+	makedepends = python2
+	depends = libffi
+	provides = cling=0.7.r20.g3d789b13
+	provides = cling-dev=0.7.r20.g3d789b13
+	provides = cling-dev-git=0.7.r20.g3d789b13
+	provides = cling-jupyter=0.7.r20.g3d789b13
+	provides = cling-jupyter-dev-git=0.7.r20.g3d789b13
+	provides = cling-jupyter-dev=0.7.r20.g3d789b13
+	conflicts = cling
+	conflicts = cling-dev
+	conflicts = cling-dev-git
+	conflicts = cling-jupyter
+	conflicts = cling-jupyter-dev
+	conflicts = cling-jupyter-dev-git
+	options = staticlibs
+	source = llvm::git+http://root.cern.ch/git/llvm.git#branch=cling-patches
+	source = clang::git+http://root.cern.ch/git/clang.git#branch=cling-patches
+	source = cling::git+http://root.cern.ch/git/cling.git#branch=master
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+
+pkgname = llvm-cling-git
+
